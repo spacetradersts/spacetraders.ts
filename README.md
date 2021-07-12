@@ -1,10 +1,10 @@
 [![Spacetraders.ts](https://spacetradersts.github.io/website/img/logo.svg)](https://spacetradersts.github.io/website)
 
-[![Build Status](https://travis-ci.org/spacetraders/spacetraders.ts.svg?branch=master)](https://travis-ci.org/spacetraders/spacetraders.ts)
-[![Coverage Status](https://coveralls.io/repos/github/spacetraders/spacetraders.ts/badge.svg?branch=master)](https://coveralls.io/github/spacetraders/spacetraders.ts?branch=master)
+[![Build Status](https://travis-ci.org/spacetradersts/spacetraders.ts.svg?branch=master)](https://travis-ci.org/spacetradersts/spacetraders.ts)
+[![Coverage Status](https://coveralls.io/repos/github/spacetradersts/spacetraders.ts/badge.svg?branch=master)](https://coveralls.io/github/spacetradersts/spacetraders.ts?branch=master)
 [![npm version](https://badge.fury.io/js/spacetraders.ts.svg)](https://badge.fury.io/js/spacetraders.ts)
-[![Dependency Status](https://david-dm.org/spacetraders/spacetraders.ts.svg)](https://david-dm.org/spacetraders/spacetraders.ts)
-[![devDependency Status](https://david-dm.org/spacetraders/spacetraders.ts/dev-status.svg)](https://david-dm.org/spacetraders/spacetraders.ts#info=devDependencies)
+[![Dependency Status](https://david-dm.org/spacetradersts/spacetraders.ts.svg)](https://david-dm.org/spacetradersts/spacetraders.ts)
+[![devDependency Status](https://david-dm.org/spacetradersts/spacetraders.ts/dev-status.svg)](https://david-dm.org/spacetradersts/spacetraders.ts#info=devDependencies)
 [![NPM](https://nodei.co/npm/spacetraders.ts.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/spacetraders.ts/)
 
 # spacetraders.ts (WIP)
