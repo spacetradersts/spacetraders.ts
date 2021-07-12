@@ -1,0 +1,49 @@
+{
+  "name": "spacetraders.ts",
+  "version": "1.0.0",
+  "description": "TypeScript library for interacting with the spacetraders API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "default": "./dist/src/index.js",
+    "require": "./dist/src/index.js",
+    "import": "./dist/src/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run test-build & npm t",
+    "test": "jest",
+    "test-build": "npm run build && node test-build"
+  },
+  "author": "SirH",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spacetradersts/spacetraders.ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spacetradersts/spacetraders.ts/issues"
+  },
+  "homepage": "https://github.com/spacetradersts/spacetraders.ts#readme",
+  "keywords": [
+    "spacetraders",
+    "api",
+    "client",
+    "node",
+    "typescript"
+  ],
+  "dependencies": {
+    "abort-controller": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "source-map-support": "^0.5.19"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.4",
+    "@types/node-fetch": "^2.5.10",
+    "codecov": "^3.8.2",
+    "dotenv": "^10.0.0",
+    "jest": "^27.0.5",
+    "ts-jest": "^27.0.3"
+  }
+}

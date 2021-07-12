@@ -1,0 +1,9 @@
+{
+    "token": "NEW-USER-TOKEN",
+    "user": {
+        "username": "NEW-USER",
+        "credits": 0,
+        "ships": [],
+        "loans": []
+    }
+}

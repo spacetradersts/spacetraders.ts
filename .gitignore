@@ -1,0 +1,4 @@
+.env
+newAccount.json
+/dist
+/node_modules
