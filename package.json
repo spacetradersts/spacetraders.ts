@@ -1,7 +1,7 @@
 {
   "name": "spacetraders.ts",
   "version": "1.0.0",
-  "description": "TypeScript library for interacting with the spacetraders API",
+  "description": "Object-oriented TypeScript library for interacting with the spacetraders API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -19,7 +19,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/spacetradersts/spacetraders.ts.git"
+    "url": "git+https://github.com/spacetradersts/spacetraders.ts.git"
   },
   "bugs": {
     "url": "https://github.com/spacetradersts/spacetraders.ts/issues"
