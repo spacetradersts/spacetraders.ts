@@ -22,7 +22,7 @@ client.createAccount('username').then((newUser: UsernameClaimPayload) => {
 });
 
 client.on('ready', () => {
-    console.log('Logged in as', client.username);
+    console.log(`Logged in as ${client.username}`);
 });
 ```
 
