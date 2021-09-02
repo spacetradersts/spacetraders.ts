@@ -1,6 +1,6 @@
 {
   "name": "spacetraders.ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Object-oriented TypeScript library for interacting with the spacetraders API",
   "main": "dist/src/index.js",
   "module": "dist/src/index.mjs",
