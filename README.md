@@ -17,7 +17,7 @@ creating an account then logging in
 import { Client } from 'spacetraders.ts';
 
 const client = new Client();
-client.createAccount('username').then((newUser: UsernameClaimPayload) => {
+client.createAccount('username').then((newUser) => {
     client.login(newUser.token);
 });
 
