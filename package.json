@@ -2,12 +2,15 @@
   "name": "spacetraders.ts",
   "version": "1.0.1",
   "description": "Object-oriented TypeScript library for interacting with the spacetraders API",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "module": "dist/src/index.mjs",
+  "types": "dist/src/index.d.ts",
   "exports": {
-    "default": "./dist/src/index.js",
-    "require": "./dist/src/index.js",
-    "import": "./dist/src/index.js"
+    "./*": "./*",
+    ".": {
+      "require": "./dist/src/index.js",
+      "import": "./dist/src/index.mjs"
+    }
   },
   "scripts": {
     "build": "tsc",
