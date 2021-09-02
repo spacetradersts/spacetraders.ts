@@ -1,4 +1,3 @@
-import fetch from "node-fetch";
 import { APIRequest, AsyncQueue, Client, Endpoints } from "..";
 
 
@@ -20,12 +19,10 @@ export class RESTManager {
         }
     }
 
-    execute(request: APIRequest) {
-        return new Promise((resolve, reject) => {
-            fetch(Endpoints.BASE_URL + request.path + (request?.params ? request.params : ''), request.fetchOptions)
+    async execute(request: APIRequest) {
+        const { default: fetch } = await import('node-fetch');
+        return fetch(Endpoints.BASE_URL + request.path + (request?.params ? request.params : ''), request.fetchOptions)
             .then((data)=>data.json())
-            .then(resolve)
-            .catch(reject)
-        });
+            .catch(e=>console.log(e))
     }
 }
