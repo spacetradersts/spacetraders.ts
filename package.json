@@ -13,7 +13,7 @@
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node compileMjs.js",
     "ci": "npm run test-build & npm t",
     "test": "jest",
     "test-build": "npm run build && node test-build"
@@ -41,11 +41,11 @@
     "source-map-support": "^0.5.19"
   },
   "devDependencies": {
-    "@types/node": "^15.12.4",
-    "@types/node-fetch": "^2.5.10",
-    "codecov": "^3.8.2",
+    "@types/node": "^15.14.9",
+    "@types/node-fetch": "^2.5.12",
+    "codecov": "^3.8.3",
     "dotenv": "^10.0.0",
-    "jest": "^27.0.5",
-    "ts-jest": "^27.0.3"
+    "jest": "^27.1.0",
+    "ts-jest": "^27.0.5"
   }
 }
