@@ -20,9 +20,15 @@ export class RESTManager {
     }
 
     async execute(request: APIRequest) {
-        const { default: fetch } = await import('node-fetch');
         return fetch(Endpoints.BASE_URL + request.path + (request?.params ? request.params : ''), request.fetchOptions)
             .then((data)=>data.json())
             .catch(e=>console.log(e))
     }
+}
+
+const _importDynamic = new Function('modulePath', 'return import(modulePath)')
+
+async function fetch(...args) {
+    const {default: fetch} = await _importDynamic('node-fetch');
+    return fetch(...args);
 }

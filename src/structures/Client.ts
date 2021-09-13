@@ -4,7 +4,6 @@ import { LoanManager } from "../managers/LoanManager";
 import { ShipManager } from "../managers/ShipManager";
 import { isOnline } from "../rest/APIResponse";
 import { StructureManager } from "../managers/StructureManager";
-import * as fs from 'fs';
 import { APIRequest, Endpoints, FlightPlanManager, LocationManager, SystemManager, Types } from "..";
 import { RESTManager } from "../rest/RESTManager";
 import { GameStatusPayload, AccountPayload, ErrorPayload, UsernameClaimPayload } from '../interfaces/APIPayload';
@@ -111,7 +110,7 @@ export class Client extends events.EventEmitter {
 
     public async createAccount(username: string) {
         const newAccount = (await this.request('POST', Endpoints.USER_CLAIM(username), { auth: false })) as UsernameClaimPayload;
-        fs.writeFile('./newAccount.json', JSON.stringify(newAccount), (err) => console.error);
+        console.warn(`Make sure to not lose your account token: ${newAccount.token}`);
         return newAccount;
     }
 

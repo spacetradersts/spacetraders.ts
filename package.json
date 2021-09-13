@@ -1,6 +1,6 @@
 {
   "name": "spacetraders.ts",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Object-oriented TypeScript library for interacting with the spacetraders API",
   "main": "dist/src/index.js",
   "module": "dist/src/index.mjs",
@@ -15,7 +15,7 @@
   "scripts": {
     "build": "tsc && node compileMjs.js",
     "ci": "npm run test-build & npm t",
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test-build": "npm run build && node test-build"
   },
   "author": "SirH",
@@ -41,11 +41,12 @@
     "source-map-support": "^0.5.19"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.1",
     "@types/node": "^15.14.9",
     "@types/node-fetch": "^2.5.12",
     "codecov": "^3.8.3",
     "dotenv": "^10.0.0",
-    "jest": "^27.1.0",
+    "jest": "^27.1.1",
     "ts-jest": "^27.0.5"
   }
 }
