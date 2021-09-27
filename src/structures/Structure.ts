@@ -1,4 +1,4 @@
-import { RawStructure, StructureDeposit, StructureWithdrawal } from '../interfaces/APIPayload';
+import type { RawStructure, StructureDeposit, StructureWithdrawal } from '../interfaces/APIPayload';
 import { Client, Endpoints } from '..';
 import { BaseGameComponent } from "./BaseGameComponent";
 import { PartialCargo } from './PartialCargo';

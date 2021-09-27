@@ -1,4 +1,4 @@
-import { RawLoan, PaidLoan } from '../interfaces/APIPayload';
+import type { RawLoan, PaidLoan } from '../interfaces/APIPayload';
 import { Client, Endpoints } from '..';
 import { BaseGameComponent } from "./BaseGameComponent";
 
@@ -19,13 +19,11 @@ export class Loan extends BaseGameComponent {
         this.type = loanData.type;
     }
 
-    public pay() {
+    public async pay() {
         if (this.client.credits < this.repaymentAmount) throw new Error('You do not have enough credits to pay for this loan');
-        return (this.client.request('POST', Endpoints.LOAN(this.id), { auth: true }) as Promise<PaidLoan>)
-        .then(data => {
-            this.client.credits = data.credits;
-            this.client.loans.cache.delete(data.loans[0].id);
-            return data.credits;
-        });
+        const data = await (this.client.request('POST', Endpoints.LOAN(this.id), { auth: true }) as Promise<PaidLoan>);
+        this.client.credits = data.credits;
+        this.client.loans.cache.delete(data.loans[0].id);
+        return data.credits;
     }
 }

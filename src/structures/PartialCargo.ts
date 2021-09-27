@@ -1,6 +1,6 @@
-import { RawPartialCargo } from "src/interfaces/APIPayload";
+import type { RawPartialCargo } from "../interfaces/APIPayload";
 import { BaseGameComponent } from "./BaseGameComponent";
-import { Client } from "./Client";
+import type { Client } from "./Client";
 
 export class PartialCargo extends BaseGameComponent {
     good: string;

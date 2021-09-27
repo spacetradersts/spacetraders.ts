@@ -6,8 +6,8 @@ import { isOnline } from "../rest/APIResponse";
 import { StructureManager } from "../managers/StructureManager";
 import { APIRequest, Endpoints, FlightPlanManager, LocationManager, SystemManager, Types } from "..";
 import { RESTManager } from "../rest/RESTManager";
-import { GameStatusPayload, AccountPayload, ErrorPayload, UsernameClaimPayload } from '../interfaces/APIPayload';
-import { ClientOptions } from '../interfaces/Client';
+import type { GameStatusPayload, AccountPayload, ErrorPayload, UsernameClaimPayload } from '../interfaces/APIPayload';
+import type { ClientOptions } from '../interfaces/Client';
 
 export class Client extends events.EventEmitter {
     token: string;

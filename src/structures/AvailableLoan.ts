@@ -1,6 +1,6 @@
-import { LoanType, RawAvailableLoan } from "src/interfaces/APIPayload";
+import type { LoanType, RawAvailableLoan } from "../interfaces/APIPayload";
 import { BaseGameComponent } from "./BaseGameComponent";
-import { Client } from "./Client";
+import type { Client } from "./Client";
 
 
 export class AvailableLoan extends BaseGameComponent {

@@ -1,5 +1,5 @@
-import { RawFlightPlan } from '../interfaces/APIPayload';
-import { Client, Endpoints } from '..';
+import type { RawFlightPlan } from '../interfaces/APIPayload';
+import type { Client } from '..';
 import { BaseGameComponent } from "./BaseGameComponent";
 
 export class FlightPlan extends BaseGameComponent {
